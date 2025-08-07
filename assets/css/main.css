@@ -4516,27 +4516,12 @@ input, select, textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Team Section */
-/* Team Member Cards - Updated styles to handle hover details */
-/* Team Member Cards - Updated styles to handle fixed width and hover details */
-/* Team Members Container */
-/* Team Members Container */
 
-
-/* Team Section */
-/* Team Section */
 
 #team {
   text-align: center;
+  padding: 0 2.5rem; /* Add left and right padding */  
 }
 
 .team-members-container {
@@ -4548,7 +4533,7 @@ input, select, textarea {
 
 .team-member {
   box-sizing: border-box;
-  width: calc(30% - 2em); /* Adjust the width as needed to fit 3 cards per line with margin */
+  width: calc(25% - 2em); /* Adjust the width as needed to fit 3 cards per line with margin */
   margin: 1em;
   overflow: hidden;
   border-radius: 8px;
@@ -4561,7 +4546,7 @@ input, select, textarea {
 .team-member .profile-picture {
   overflow: hidden;
   border-radius: 8px 8px 0 0;
-  height: 450px; /* Set a fixed height for the profile picture container */
+  height: 400px; /* Set a fixed height for the profile picture container */
 }
 
 .team-member img {
@@ -4614,4 +4599,105 @@ input, select, textarea {
 
 .team-member:hover {
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Lab Alumni Section --- */
+
+#alumni .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+    padding: 4em 0 2em 0;
+}
+
+.alumni-grid {
+    display: grid;
+    /* This creates a responsive grid. It will create as many columns of at least 160px
+       as can fit, ensuring the rows look balanced and mostly even. */
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center; /* Center items horizontally in their grid cell */
+    gap: 2em; /* Provides space between the circles */
+    padding: 2.5em 0;
+}
+
+/* Container for each alumnus */
+.alumni-member {
+    position: relative; /* Needed for positioning the details overlay */
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 50%; /* This makes the container circular */
+    transition: transform 0.3s ease-in-out; /* Add transition for scaling the whole element */
+}
+
+/* Styling for the alumni images */
+.alumni-member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* This makes the image a circle */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* The overlay that appears on hover */
+.alumni-member .alumni-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Match the circular shape */
+    background-color: rgba(0, 56, 101, 0.85); /* Semi-transparent background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the details and zoom the entire element on hover */
+.alumni-member:hover {
+    transform: scale(1.5); /* Scale the entire member container */
+    z-index: 10; /* Ensure it appears above other elements when scaled */
+}
+
+.alumni-member:hover .alumni-details {
+    opacity: 1; /* Make the overlay visible */
+}
+
+/* Styling for the text inside the overlay */
+.alumni-member .alumni-details h4 {
+    margin: 0;
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+.alumni-member .alumni-details p {
+    margin: 0.25em 0 0 0;
+    font-size: 0.5em;
+    font-style: italic;
+    padding: 0 5px;
+}
+
+/* --- Group Project Alumni --- */
+
+.alumni-group-project {
+    width: 250px;
+    height: 250px;
+}
+
+.alumni-group-project:hover {
+    transform: scale(1.2);
+}
+
+.alumni-group-project .alumni-details h4 {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.alumni-group-project .alumni-details p {
+    font-size: 0.8em;
+    line-height: 1.4;
 }
