@@ -1,0 +1,577 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GREEN Electronics Team @ University of Glasgow</title>
+		<meta charset="utf-8" />
+        <meta name="keywords" content="RF electronics team, glasgow green electronics researchers, Mahmoud Wagih, Benjamin King, Xiaochuan Fang, Fatemeh Nikbakhtnasrabadi, Mohammed Hassan, Nikolas Bruce, Sitong Mu, James Stephenson, Jinghong Yue, Alzbeta Oravcova, IEEE Antennas Scholarship UK, M Wagih" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><span style="color:#c1d102">GREEN</span> Electronics<strong><span>Lab</span></strong>      </a>
+
+                        <nav>
+                            
+                            <a href="researchareas.html">Research</a>
+                                        
+                            <a href="outreach.html">Outreach</h6></a>
+                        
+                            <a href="who.html">Who</h6></a>
+
+							<a href="projects.html">Projects</h6></a>
+
+							<a href="facilities.html">Facilities</h6></a>
+
+							<a href="#menu">More</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="ResearchAreas.html">Research areas</a></li>
+							<li><a href="http://eprints.gla.ac.uk/view/author/67094.html"  target="_blank" rel="noopener noreferrer">Publications (UofG Repo)</a></li>
+							<li><a href="projects.html"  target="_blank" rel="noopener noreferrer">Our projects</a></li>
+							<li><a href="https://www.youtube.com/channel/UCK_WpI3Rd3BcKzC2haN_x8A"  target="_blank" rel="noopener noreferrer">Videos/presentations (uTube)</a></li>
+                            <li><a href="Facilities.html">Facilities &amp Expertise</a></li>
+                            <li><a href="https://www.rxwatt.com/">RX Watt Ltd</a></li>						
+                            <li><a href="Teaching.html">Teaching &amp Education</a></li>							
+                            <li><a href="Who.html">The Team</a></li>
+                        	<!-- <li><a href="WhyPGR.html">Why join?</a></li> -->
+
+						</ul>
+						<ul class="actions stacked">
+							<!--<li><a href="#" class="button primary fit">Please note, this page is still under development; get in touch if you can't find something</a></li> -->
+						</ul>
+					</nav>
+
+
+					<section id="banner2" class="major">
+						<div class="inner">
+							<header class="major">
+                                <h1>Our Team</h1>
+							</header>
+							<div class="content">
+                                <p><h3>People make the research! Find out who does what in <span style="color:#c1d102">Green RF-Enabled &amp; Flexible Electronics</span></p> </h3>
+
+                                
+				                <!--<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Find out more</a></li>
+								</ul> -->
+
+						</div>
+					</section>
+
+
+				<!-- CURRENT TEAM -->
+			<div id="main" class="spotlights2">
+			
+							<section id="two">
+
+
+								<!-- Team Members -->
+								<section id="team">
+									<br>
+									<h3>Active members</h3>
+									<p>The lab is made of 5 research staff, 6 PhD students, and multiple visiting scholars; in chronological order of joining:</p>
+									  <a href="https://www.gla.ac.uk/schools/engineering/staff/mahmoudwagih/" target="_blank"><div class="team-member">
+										<h5>Sustainable RF-Enabled Systems</h5>
+
+										  <div class="profile-picture">
+											<img src="images/mah.jpg" alt="Mahmoud Wagih" />
+										  </div>
+										  <div class="details-container">
+											<h3>Dr Mahmoud Wagih</h3>
+											<h4>Lead (PI)</h4>
+											<p>Lead/co-lead on £17M+ research projects spanning the RF-enabled electronics spectrum.
+											<br> <br>
+											Knows something about every active research topic here; (might still) know everything about some topics.</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+										</div></a>
+										
+
+									<div class="team-member">
+										<h5>Embedded Systems: RF Sensing</h5>
+
+										  <div class="profile-picture">
+											<img src="images/james.jpg" alt="James" />
+										  </div>
+										  <div class="details-container">
+											<h3>James Stephenson</h3>
+											<h4>Research Project Assistant</h4>
+											<p><a href="https://www.electronicsweekly.com/news/ew-brightsparks-2023-profile-james-stephenson-university-of-glasgow-2024-03/">IEEE Antennas and Propagation Research Scholarship Awardee. EW Brightsparks Awardee. EuMW Student Chair </a> <br> "Re-joined" after a successful group project at UofG School of Computing <br><br> Written lots of embedded C, and really likes Python.</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/james-stephenson-363a821a3" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>	
+
+
+									<div class="team-member">
+										<h5>Antennas &amp Wireless Power: Biomedical</h5>
+
+										  <div class="profile-picture">
+											<img src="images/nikolas.jpg" alt="Team Member Name" />
+										  </div>
+										  <div class="details-container">
+											<h3>Nikolas Bruce</h3>
+											<h4>Postgraduate Researcher</h4>
+											<p>"Re-joined" after a successful Biomedical BEng project, published in an IEEE paper, at JWSE. <br><br> Designed several antennas, formulated many implantable test phantoms, and now over to growing/preventing infections.</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>	
+
+									<div class="team-member">
+										<h5>Integrated Circuits: Wireless Power</h5>
+
+										  <div class="profile-picture">
+											<img src="images/sitong.jpg" alt="Team Member Name" />
+										  </div>
+										  <div class="details-container">
+											<h3>Sitong Mu</h3>
+											<h4>Postgraduate Researcher</h4>
+											<p>"Re-joined" after a successful MSc project, in preparation for publication, at JWSE. <br><br> Working across machine learning, RF sensing, and CMOS RFIC Design.</p>
+											<br> Co-supervised by Prof. Hadi Heidari
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>			
+
+
+
+									<div class="team-member">
+										<h5>Advanced Materials: Sustainable Electronics</h5>
+
+										  <div class="profile-picture">
+											<img src="images/benking.jfif" alt="Team Member Name" />
+										  </div>
+										  <div class="details-container">
+											<h3>Dr Benjamin King</h3>
+											<h4>Leverhulme Trust Early-Career Fellow</h4>
+											<p>An experienced chemical engineer with expertise across large-area electronics, now leading a Leverhulme Fellowship transforming gas sensors. <br><br> Learnt RF engineering 101 in 10 days!</p>
+											
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/benjamin-king-chemeng" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>		
+
+
+									<div class="team-member">
+										<h5>Antennas &amp Sensors: Sustainable Electronics</h5>
+
+										  <div class="profile-picture">
+											<img src="images/xfang.JPG" alt="Team Member Name" />
+										  </div>
+										  <div class="details-container">
+											<h3>Dr Xiaochuan Fang</h3>
+											<h4>Research Associate</h4>
+											<p>An experienced antenna designer with skills in advanced and additive manufacturing. <br><br> Now making re-programmable and circular RF sensors</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/xiaochuan-fang-073174175" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>		
+
+									<div class="team-member">
+										<h5>Integrated Circuits: Sustainable THz/6G</h5>
+
+										  <div class="profile-picture">
+											<img src="images/profile.png" alt="Team Member Name" />
+										  </div>
+										  <div class="details-container">
+											<h3>Jinghong Yue</h3>
+											<h4>Postgraduate Researcher</h4>
+											<p>"Re-joining" after an MSc in wireless power at JWSE. <br><br> Exploring the limits of microfabrication for THz antennas.</p>
+											<br> Co-supervised by Dr. Abdullah Al-Khalidi
+											<ul class="icons">
+											  <!-- Add social media icons and links here
+											  <li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>	
+									
+
+									<div class="team-member">
+										<h5>RF Systems: Sustainable Electronics</h5>
+
+										  <div class="profile-picture">
+											<img src="images/fatemeh.jfif" alt="Profile picture" />
+										  </div>
+										  <div class="details-container">
+											<h3>Dr Fatemeh Nikbakhtnasrabadi</h3>
+											<h4>Research Associate</h4>
+											<p>After researching RF systems from smart bandages to quantum computers, she's now building advanced/3D RF systems for sustainability</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/fatemeh-nikbakhtnasrabadi-02821a98?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABStbKABLIIY1asBgymVLm4AaH-lVRAALIc&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B%2BPDoWDhTTpCgv1zBf%2Bpn7w%3D%3D" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>
+
+									<div class="team-member">
+										<h5>RF Systems: Sustainability</h5>
+
+										  <div class="profile-picture">
+											<img src="images/tasneem.jpg" alt="Profile picture" />
+										  </div>
+										  <div class="details-container">
+											<h3>Tasneem Khodair</h3>
+											<h4>Postgraduate Researcher</h4>
+											<p>After joining us on an IEEE Antennas and Propagation Scholarship transforming wireless e-textiles, her PhD now pursues green networks</p>
+											<br> Co-supervised with Dr. Lina Mohjazi
+
+										  </div>
+									</div>
+
+									<div class="team-member">
+										<h5>RF Systems: Outreach / Education</h5>
+
+										  <div class="profile-picture">
+											<img src="images/alzbeta.jfif" alt="Profile picture" />
+										  </div>
+										  <div class="details-container">
+											<h3>Alzbeta Oravcova</h3>
+											<h4>Postgraduate Researcher</h4>
+											<p>Developing the next-generation of education, outreach, and public engagment tools for electronic and RF engineering.</p>
+
+										  </div>
+									</div>
+
+
+									<div class="team-member">
+										<h5>RF Materials</h5>
+
+										  <div class="profile-picture">
+											<img src="images/profile.png" alt="Profile picture" />
+										  </div>
+										  <div class="details-container">
+											<h3>Alexander Nicholas</h3>
+											<h4>Research Intern</h4>
+											<p>Fabricating the next-generation of implantable antennas using emerging materials.</p>
+
+										  </div>
+									</div>
+
+
+
+									<div class="team-member">
+										<h5>RF Systems: Sustainable Electronics</h5>
+
+										  <div class="profile-picture">
+											<img src="images/YOU.jpg" alt="Profile picture" />
+										  </div>
+										  <div class="details-container">
+											<h3>YOU?</h3>
+											<h4>Postgraduate Research (PhD) or Research Assistant/Associate</h4>
+											<p>Reach out if anything on this website sounds interesting!</p>
+											<ul class="icons">
+											  <!-- Add social media icons and links here -->
+											  <li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											  <!-- Add more social media icons as needed -->
+											</ul>
+										  </div>
+									</div>
+
+
+									
+								</section>										
+							</section>
+
+
+							<section id="two">
+
+								<!-- ALUMNI -->
+								<section id="alumni" class="spotlights2">
+									<div class="inner">
+										<header class="major">
+											<h2>Lab Alumni</h2>
+											<p>Former researchers and visitors since 2022</p>
+										</header>
+
+										<div class="alumni-grid">
+
+
+											<!-- Mikel -->
+											<div class="alumni-member">
+												<img src="images/profile.png" alt="Dr Manoj Kumar" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=M.K.';">
+												<div class="alumni-details">
+													<h4>Mohammed Hassan</h4>
+													<p>Research Assistant -><br>PhD researhcer, UofG</p>
+												</div>
+											</div>
+
+
+											<!-- Mikel -->
+											<div class="alumni-member">
+												<img src="images/mikel.jpg" alt="Dr Manoj Kumar" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=M.K.';">
+												<div class="alumni-details">
+													<h4>Mikel Garcia-Palomo</h4>
+													<p>Visiting PGR -><br>Research Assistant, Univ Granada</p>
+												</div>
+											</div>
+
+
+											<!-- Dr Manoj Kumar -->
+											<div class="alumni-member">
+												<img src="images/manojkumar.jpg" alt="Dr Manoj Kumar" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=M.K.';">
+												<div class="alumni-details">
+													<h4>Dr Manoj Kumar</h4>
+													<p>Research Associate -><br>DST Faculty (Ass't Prof), IIT Kanpur + Affiliate, UofG</p>
+												</div>
+											</div>
+
+											<!-- Dr Shok Karimian -->
+											<div class="alumni-member">
+												<img src="images/shok.PNG" alt="Dr Shok Karimian" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=S.K.';">
+												<div class="alumni-details">
+													<h4>Dr Shok Karimian</h4>
+													<p>Research Associate -><br>University of Manchester</p>
+												</div>
+											</div>
+											
+											<!-- Justine de Cremoux -->
+											<div class="alumni-member">
+												<img src="images/justine.jfif" alt="Justine de Cremoux" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=J.C.';">
+												<div class="alumni-details">
+													<h4>Justine de Cremoux</h4>
+													<p>EPSRC Vacation Scholar -><br>Celestia</p>
+												</div>
+											</div>
+
+											<!-- Andrzej Dudek -->
+											<div class="alumni-member">
+												<img src="images/andrzej.jpg" alt="Andrzej Dudek" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=A.D.';">
+												<div class="alumni-details">
+													<h4>Andrzej Dudek</h4>
+													<p>Visiting Postgraduate Researcher -> <br> Researh Assistant, AGH Krakow</p>
+												</div>
+											</div>
+
+											<!-- Dr Johannes Schneider -->
+											<div class="alumni-member">
+												<img src="images/johannes.png" alt="Dr Johannes Schneider" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=J.S.';">
+												<div class="alumni-details">
+													<h4>Dr Johannes Schneider</h4>
+													<p>Research Assistant -><br>R&ampD Engineer, King's College London</p>
+												</div>
+											</div>
+
+											<!-- Midhun Mathew -->
+											<div class="alumni-member">
+												<img src="images/midhun.jpg" alt="Midhun Mathew" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=M.M.';">
+												<div class="alumni-details">
+													<h4>Midhun Mathew</h4>
+													<p>Research Project Assistant -><br>Graduate Engineer</p>
+												</div>
+											</div>
+
+											<!-- Matthew Chieng -->
+											<div class="alumni-member">
+												<img src="images/matt.jpg" alt="Matthew Chieng" onerror="this.onerror=null;this.src='https://placehold.co/150x150/333/FFF?text=M.C.';">
+												<div class="alumni-details">
+													<h4>Matthew Chieng</h4>
+													<p>Research Project Assistant -><br>Electronic Engineer, Vitrox Corp.</p>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</section>
+
+
+							
+							
+							
+							</section>
+
+							<section id="two" style="background-color:teal;">
+
+									<div class="content">
+										<div class="inner">
+
+
+											<header class="major">
+												<h3>Student Project Highlights</h3>
+											</header>		
+											<p>Our BEng, MEng, and MSc individual and group projects work on research-led, hands-on challenges; recent highlights include:</p>											
+											<ul class="actions">
+								
+													<li><a href="https://ieeexplore.ieee.org/document/10904145" target="_blank" class="button next">BEng Project to IEEE JSAS Featured Paper, McPartlin, 2024-25</a> 
+													
+													<br> <br>
+													  <a href="https://www.theengineer.co.uk/content/the-student-engineer/utilising-the-rs-student-fund" target="_blank" class="button next">MEng Group Project, 2024: The Engineeer coverage</a>
+
+													<br> <br>
+													  <a href="#" target="_blank" class="button next">MEng Group Project, 2025: RS Components sponsorship</a>
+													  
+													</li>
+											</ul> 				
+										</div>
+									</div>
+
+							</section>		
+
+
+							<section id="two" class="spotlights">
+
+
+							
+								<section>
+									<a  class="image">
+										<img src="images/group_project_2.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Project Students within the Green RF-Enabled Electronics Lab</h3>
+											</header>
+											<p>
+											
+											<div class="row">
+												<div class="column">
+												<ol>
+												  <li>MEng (Group): Craig C* (2024/25)</li>								
+												  <li>MEng (Group): Martins K* (2024/25)</li>								
+												  <li>MEng (Group): Djan T*</li>		
+
+												  <li>BEng: Agnay B* (2024/25)</li>								
+												  <li>MEng: Martins K* (2024/25)</li>								
+
+												  <li>MSc: Kabir M* (2023/24)</li>								
+												  <li>MSc: Jiale T* (2023/24)</li>								
+												  <li>MSc: Jindong S* (2023/24)</li>								
+												  <li>MSc: Yuhang S* (2023/24)</li>								
+												  <li>MSc: Xiaoyu Z* (2023/24)</li>								
+												  
+												  <li>MEng (Group 2): Torin S* (2023/24)</li>																						
+												  <li>MEng (Group 2): Eve M* (2023/24)</li>																						
+												  <li>MEng (Group 2): Ewan B* (2023/24)</li>																						
+												  <li>MEng (Group 2): Mairead R* (2023/24)</li>																						
+												</div>
+												
+												<div class="column">
+												<ol start="12">
+												  <li>MEng (Group 1): Dario P* (2023/24)</li>																						
+												  <li>MEng (Group 1): Haroun A* (2023/24)</li>																						
+												  <li>MEng (Group 1): Robert J* (2023/24)</li>																						
+												  <li>MEng (Group 1): Jed S* (2023/24)</li>			
+
+												  <li>BEng: Lok Man S* (2023/24)</li>																						
+												  <li>BEng: Finlay Smith (2023/24)</li>																						
+												  <li>BEng: James Stephenson (now RA/PGR, 2023/24)</li>																						
+												  <li>BEng: Ben McPartlin (2023/24)</li>																						
+												  <li>MSc: Midhun Mathew* (2022/23, rejoined as a PA)</li>										
+												  <li>MSc: Mengyao L* (2022/23)</li>										
+												  <li>MSc: Jinghong Yue (now PGR), (2022/23)</li>
+												  <li>MSc: Sitong Mu (now PGR), (2022/23)</li>
+												  <li>BEng: Nikolas Bruce (now PGR), (2022/23)</li>
+												  <li>BEng: George B* (2022/23)</li>
+												</ol>
+												</div>
+											</div>	
+                                            </p>									
+										</div>
+									</div>
+								</section>
+
+
+					
+							
+							</section>
+						
+
+				<!-- Associated External Student Group Design Projects 
+				<section id="two">
+					<div class="inner">
+						<header class="major">
+							<h3>Associated External Student Group Design Projects</h3>
+						</header>
+						<p>Several of our research projects involved external student group design projects, who have contributed to designing applications and software feeding into our publications; <br>several students joined the lab on related projects. The projects are listed in chronological order. </p>
+
+						<div class="alumni-grid">
+							<div class="alumni-member alumni-group-project">
+								<img src="images/gdp.jpg" alt="Southampton Group Project" onerror="this.onerror=null;this.src='https://placehold.co/250x250/333/FFF?text=U+of+Southampton';">
+								<div class="alumni-details">
+									<h4>Group Design Project (U of Southampton)</h4>
+									<p>Matthew Chieng (Rejoiner)<br>Yan K*<br>Abigail W.<br>Joshua M*<br>Alex S*</p>
+								</div>
+							</div>
+
+							<div class="alumni-member alumni-group-project">
+								<img src="images/ese.jpg" alt="Glasgow Group Project" onerror="this.onerror=null;this.src='https://placehold.co/250x250/333/FFF?text=U+of+Glasgow';">
+								<div class="alumni-details">
+									<h4>Software Design Project (U of Glasgow)</h4>
+									<p>James Stephenson (Rejoiner)<br>Finlay D*<br>Bailey H*<br>Ben M*<br>Laurie M*<br>Scott P*<br>Jalal S*</p>
+								</div>
+							</div>
+							
+							<div class="alumni-member alumni-group-project">
+								<img src="images/sh.jpg" alt="Glasgow Group Project" onerror="this.onerror=null;this.src='https://placehold.co/250x250/333/FFF?text=U+of+Glasgow';">
+								<div class="alumni-details">
+									<h4>Software Design Project (U of Glasgow)</h4>
+									<p>Alastair<br>Finlay D*<br>Bailey H*<br>Ben M*<br>Laurie M*<br>Scott P*<br>Jalal S*</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+									
+						
+				-->
+								 
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<!--<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+								<li><a href="https://www.linkedin.com/in/mahmoud-wagih/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; MW 2025 </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

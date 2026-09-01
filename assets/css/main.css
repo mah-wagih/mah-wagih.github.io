@@ -1774,6 +1774,7 @@ input, select, textarea {
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
+		max-width: 100%; /* max-content alone overflows narrow screens once the heading/intro text is long */
 		margin-bottom: 2em;
 	}
 
@@ -2954,6 +2955,8 @@ input, select, textarea {
 					border-radius: 0;
 					display: block;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 
 				.spotlights > section > .image:before {
@@ -3437,6 +3440,11 @@ input, select, textarea {
 
 				#header .logo {
 					padding: 0 1em;
+				}
+
+				/* Collapse the inline links into the hamburger; every destination is in #menu. */
+				#header nav a:not([href="#menu"]) {
+					display: none;
 				}
 
 				#header nav a {
@@ -3930,7 +3938,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/teamlab.jpeg");
+		background-image: url("../../images/social_christmas.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4520,85 +4528,13 @@ input, select, textarea {
 
 
 #team {
-  text-align: center;
-  padding: 0 2.5rem; /* Add left and right padding */  
+  text-align: left;
 }
-
-.team-members-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 0; /* Remove white space between inline-block elements */
-}
-
-.team-member {
-  box-sizing: border-box;
-  width: calc(25% - 2em); /* Adjust the width as needed to fit 3 cards per line with margin */
-  margin: 1em;
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #333; /* Dark grey background */
-  color: #fff; /* White text */
-  position: relative;
-  display: inline-block; /* Make them inline-block to remove line breaks */
-}
-
-.team-member .profile-picture {
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-  height: 400px; /* Set a fixed height for the profile picture container */
-}
-
-.team-member img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px 8px 0 0;
-}
-
-.team-member .details-container {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
-  text-align: center;
-}
-
-.team-member:hover .details-container {
-  display: block;
-}
-
-.team-member h3,
-.team-member p {
-  margin: 0;
-}
-
-.team-member h3 {
-  margin-top: 0.5em;
-}
-
-.team-member p {
-  font-style: italic;
-  margin-top: 0.5em;
-}
-
-.team-member .icons {
-  margin-top: 1em;
-}
-
-.team-member .icons a {
-  margin-right: 0.5em;
-  color: #fff;
-}
-
-.team-member:hover {
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+#team > .inner {
+  max-width: 65em;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  padding: 3em 0 1em;
 }
 
 /* --- Lab Alumni Section --- */
@@ -4614,7 +4550,7 @@ input, select, textarea {
     display: grid;
     /* This creates a responsive grid. It will create as many columns of at least 160px
        as can fit, ensuring the rows look balanced and mostly even. */
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     justify-items: center; /* Center items horizontally in their grid cell */
     gap: 2em; /* Provides space between the circles */
     padding: 2.5em 0;
@@ -4623,8 +4559,8 @@ input, select, textarea {
 /* Container for each alumnus */
 .alumni-member {
     position: relative; /* Needed for positioning the details overlay */
-    width: 180px;
-    height: 180px;
+    width: 135px;
+    height: 135px;
     cursor: pointer;
     border-radius: 50%; /* This makes the container circular */
     transition: transform 0.3s ease-in-out; /* Add transition for scaling the whole element */
@@ -4684,8 +4620,8 @@ input, select, textarea {
 /* --- Group Project Alumni --- */
 
 .alumni-group-project {
-    width: 250px;
-    height: 250px;
+    width: 188px;
+    height: 188px;
 }
 
 .alumni-group-project:hover {
@@ -4700,4 +4636,234 @@ input, select, textarea {
 .alumni-group-project .alumni-details p {
     font-size: 0.8em;
     line-height: 1.4;
+}
+
+/* Keep research spotlight images filled and proportionate. */
+#main .spotlights > section > .image img { height: 100%; object-fit: cover; }
+
+
+/* Full-width, automatically rolling photo galleries. */
+.full-width-gallery { overflow: hidden; }
+.full-width-gallery .inner { max-width: none; width: 100%; }
+/* Seamless marquee: the track holds the image list exactly twice, so translating by
+   -50% lands on a pixel-identical frame and the loop never visibly resets.
+   Horizontal padding/gap are kept at 0 and spacing is applied as a per-image
+   margin, otherwise the two halves are not exactly equal and the seam drifts. */
+.rolling-gallery { display: flex; width: max-content; padding: 0 0 1rem; animation: gallery-roll 54s linear infinite; }
+.rolling-gallery:hover { animation-play-state: paused; }
+.rolling-gallery img { display: block; width: auto; height: 15rem; margin-right: 1rem; border-radius: 0.25rem; }
+@keyframes gallery-roll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* JS takes over the scroll so the track can also be dragged by hand; the CSS
+   animation above stays as the no-JS fallback. */
+.rolling-gallery.is-draggable {
+  animation: none;
+  cursor: grab;
+  touch-action: pan-y;          /* keep vertical page scrolling on touch */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.rolling-gallery.is-dragging { cursor: grabbing; }
+.rolling-gallery img { -webkit-user-drag: none; user-drag: none; }
+.team-dropdown { margin: 1.5rem 0; border: 1px solid rgba(255,255,255,.25); padding: 1rem; }
+.team-dropdown summary { cursor: pointer; font-size: 1.25rem; font-weight: 600; }
+.team-dropdown .team-member { margin-top: 1rem; }
+@media screen and (max-width: 736px) { .rolling-gallery img { height: 11rem; } }
+
+/* Team page: roster cards. A fixed-ratio thumbnail sits beside text that is always visible in normal
+   flow, so nothing depends on hover, nothing is clipped, and portraits never squish. */
+.team-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; align-items: start; }
+@media screen and (max-width: 980px) { .team-row { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+.team-category { margin: 0 0 3rem; }
+.team-category:last-child { margin-bottom: 0; }
+.team-category > h3 { margin: 0 0 .25rem; }
+.team-category-tagline { margin: 0 0 1rem; max-width: 46em; opacity: .85; font-style: italic; }
+
+.team-grid { display: flex; flex-direction: column; gap: .85rem; margin: 1rem 0 0; }
+
+#team .team-member {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  /* extra bottom padding reserves a clear band for the absolutely-placed topic tag */
+  padding: .85rem .85rem 2.6rem;
+  border-radius: .5rem;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.09);
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
+}
+#team .team-member:hover,
+#team .team-member:focus-within { background: rgba(255,255,255,.1); border-color: rgba(193,209,2,.55); transform: translateX(3px); }
+
+#team .team-member .photo { flex: 0 0 11rem; width: 11rem; aspect-ratio: 3 / 4; overflow: hidden; border-radius: .35rem; background: #182a26; }
+#team .team-member img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+
+#team .team-member .details-container { flex: 1 1 auto; min-width: 0; }
+#team .team-member .details-container h4 { margin: 0; font-size: 1.05rem; line-height: 1.25; color: #fff; }
+#team .team-member .details-container h5 { margin: .2rem 0 0; font-size: .72rem; letter-spacing: .04em; color: #c1d102; text-transform: uppercase; }
+#team .team-member .details-container p { font-size: .85rem; line-height: 1.5; margin: .5rem 0 0; opacity: .92; }
+#team .team-member .icons { margin: .5rem 0 0; }
+#team .team-member.affiliate-placeholder { border-style: dashed; }
+
+/* Research-topic chip, drawn as a luggage-tag shape: pointed left end + punch hole. */
+#team .topic-tag {
+  position: absolute;
+  right: .7rem;
+  bottom: .7rem;
+  z-index: 1;
+  max-width: calc(100% - 1.4rem);
+  padding: .3rem .7rem .3rem 1.3rem;
+  background: #14342f;
+  color: #c1d102;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0 .28rem .28rem 0;
+  clip-path: polygon(.72rem 0, 100% 0, 100% 100%, .72rem 100%, 0 50%);
+}
+#team .topic-tag:after {           /* the tag's punch hole */
+  content: '';
+  position: absolute;
+  left: .8rem;
+  top: 50%;
+  width: .3rem;
+  height: .3rem;
+  margin-top: -.15rem;
+  border-radius: 50%;
+  background: rgba(193,209,2,.85);
+}
+
+/* Visiting / affiliate cards: three across, photo stacked above the text. */
+.team-grid--thirds {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+/* Photos here keep the same 11rem / 3:4 portrait as the staff and PhD cards. */
+#team .team-grid--thirds .team-member:hover,
+#team .team-grid--thirds .team-member:focus-within { transform: translateY(-3px); }
+@media screen and (max-width: 980px) { .team-grid--thirds { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 640px) { .team-grid--thirds { grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 480px) {
+  #team .team-member .photo { flex-basis: 7rem; width: 7rem; }
+  #team .team-member .details-container p { font-size: .8rem; }
+  #team .topic-tag { font-size: .58rem; }
+}
+
+#team-life .rolling-gallery { padding: 0; animation-duration: 108s; }
+#team-life .rolling-gallery img { width: auto; height: 28rem; border-radius: 0; margin: 0; }
+@media screen and (max-width: 736px) { #team-life .rolling-gallery img { height: 19rem; } }
+
+
+/* ---- Site-wide layout polish ------------------------------------------------ */
+
+/* Grant/press listings: readable line length and breathing room between entries. */
+.project-list,
+.press-list {
+  list-style: none;
+  margin: 1em 0 2em;
+  padding: 0;
+}
+.project-list > li,
+.press-list > li {
+  position: relative;
+  margin: 0 0 .9em;
+  padding: 0 0 .9em 1.4em;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.project-list > li:last-child,
+.press-list > li:last-child { border-bottom: 0; }
+.project-list > li:before,
+.press-list > li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .62em;
+  width: .45em;
+  height: .45em;
+  border-radius: 50%;
+  background: #c1d102;
+}
+
+/* Funder logo strips: align to a common baseline instead of ragged inline blocks. */
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem 3rem;
+  margin: 2rem 0 2.5rem;
+}
+.logo-strip img {
+  display: block;
+  height: 6.5rem;       /* uniform optical size regardless of source aspect ratio */
+  width: auto;
+  max-width: 20rem;
+  object-fit: contain;
+}
+@media screen and (max-width: 980px) {
+  .logo-strip { gap: 1.75rem 2.5rem; }
+  .logo-strip img { height: 5.25rem; max-width: 16rem; }
+}
+@media screen and (max-width: 480px) {
+  .logo-strip { gap: 1.5rem 2rem; justify-content: center; }
+  .logo-strip img { height: 4rem; max-width: 11rem; }
+}
+
+/* Fellowship pages: award/engagement photo collage. Fixed-ratio tiles so mixed
+   portrait/landscape source photos crop to a common size instead of squishing. */
+.photo-collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .85rem;
+  margin: 1.5rem 0 .5rem;
+}
+.photo-collage figure {
+  margin: 0;
+  position: relative;
+}
+.photo-collage img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: .35rem;
+}
+.photo-collage figcaption {
+  margin-top: .4rem;
+  font-size: .78rem;
+  line-height: 1.35;
+  opacity: .82;
+}
+@media screen and (max-width: 980px) {
+  .photo-collage { grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 480px) {
+  .photo-collage { grid-template-columns: 1fr; }
+}
+
+/* Visible keyboard focus — the template removes outlines everywhere. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #c1d102;
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion for the auto-scrolling galleries. */
+@media (prefers-reduced-motion: reduce) {
+  .rolling-gallery { animation: none; }
+  * { scroll-behavior: auto !important; }
 }
