@@ -1,0 +1,279 @@
+/*
+ * comms3.css: stylesheet for the Communication Systems teaching page (comms3.html).
+ * Uses the lab website's colours and type (navy #003865, white Source Sans Pro,
+ * lime #c1d102 accent) but is self-contained: it does not load main.css.
+ * Text sits on the dark background; only the GIFs are on white cards.
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+:root {
+	--navy: #003865;
+	--text: #ffffff;
+	--muted: rgba(255, 255, 255, 0.65);
+	--faint: rgba(255, 255, 255, 0.35);
+	--rule: rgba(212, 212, 255, 0.1);
+	--accent: #c1d102;
+	--hover: #9bf1ff;
+	--active: #53e3fb;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+/* the full-width white GIF bands must not cause sideways scrolling */
+html, body { overflow-x: hidden; }
+@supports (overflow-x: clip) { html, body { overflow-x: clip; } }
+
+body {
+	margin: 0;
+	background: var(--navy);
+	color: var(--text);
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 17pt;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 1680px) { body { font-size: 14pt; } }
+@media screen and (max-width: 1280px) { body { font-size: 12pt; } }
+@media screen and (max-width: 360px)  { body { font-size: 11pt; } }
+
+strong, b { font-weight: 600; color: var(--text); }
+em { font-style: italic; }
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: dotted 1px;
+	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+a:hover { color: var(--hover); border-bottom-color: transparent; }
+
+h1, h2, h3 {
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0;
+	color: var(--text);
+	text-wrap: balance;
+}
+
+/* Reading-progress bar */
+.progress {
+	position: fixed;
+	top: 0; left: 0;
+	height: 3px;
+	width: 0;
+	background: var(--accent);
+	z-index: 10;
+}
+
+/* Layout: a single centred column, every step on (almost) its own screen */
+.page {
+	width: calc(100% - 6em);
+	max-width: 65em;
+	margin: 0 auto;
+}
+
+.beat {
+	min-height: 68vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 9vh 0;
+}
+
+/* Opening screen */
+.hero { min-height: 75vh; }
+
+.eyebrow,
+.part {
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin: 0 0 1.25em;
+}
+
+.hero h1 {
+	font-size: 3em;
+	max-width: 14em;
+}
+
+.hero .sub {
+	color: var(--muted);
+	margin: 1.5em 0 0;
+	max-width: 30em;
+}
+
+.scroll-cue {
+	margin-top: 3em;
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	color: var(--faint);
+}
+
+.scroll-cue::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 3.5em;
+	margin: 1em auto 0;
+	background: linear-gradient(var(--faint), transparent);
+}
+
+/* Section opener: "PART 1" + title with the lab's white underline bar */
+.opener { min-height: 75vh; }
+
+.opener h2 {
+	font-size: 2.5em;
+	display: inline-block;
+}
+
+.opener h2::after {
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0.35em auto 0;
+	width: 100%;
+	background: var(--text);
+}
+
+/* Step: one short title + one formula */
+.step h3 {
+	font-size: 1.75em;
+	font-weight: 600;
+	max-width: 22em;
+}
+
+.step .formula {
+	margin-top: 1.5em;
+	font-size: 1.35em;
+	max-width: 100%;
+	overflow-x: auto;
+	padding: 0.5em 0;
+}
+
+/* multi-line derivations: a little smaller so they fit the column */
+.step .formula.long { font-size: 1.05em; }
+
+.step .formula .katex-display { margin: 0; }
+
+.step .note {
+	margin: 1.25em 0 0;
+	color: var(--muted);
+	max-width: 32em;
+}
+
+.hl { color: var(--accent); font-weight: 600; }
+
+/* GIFs: the only white areas, a full-width white band with a small gap above each GIF */
+.gif { min-height: 60vh; }
+
+.gif figure {
+	align-self: flex-start;
+	margin: 0 0 0 calc(50% - 50vw);
+	width: 100vw;
+	padding: 2.5em 1em 1.25em;
+	background: #ffffff;
+}
+
+.gif img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* Last screen: buttons in the lab site's style */
+.finish h2 { font-size: 2em; }
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25em;
+	justify-content: center;
+	margin-top: 2.5em;
+}
+
+.button {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 3.5em;
+	padding: 0.6em 1.75em;
+	border: 0;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 2px var(--text);
+	color: var(--text);
+	font-size: 0.8em;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.button small {
+	font-size: 0.75em;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	text-transform: none;
+	opacity: 0.8;
+}
+
+.button:hover { box-shadow: inset 0 0 0 2px var(--hover); color: var(--hover); }
+.button:active { box-shadow: inset 0 0 0 2px var(--active); color: var(--active); background-color: rgba(155, 241, 255, 0.1); }
+
+.button.primary { background: var(--text); box-shadow: none; color: var(--navy); }
+.button.primary:hover { background: var(--hover); color: var(--navy); }
+.button.primary:active { background: var(--active); color: var(--navy); }
+
+a:focus-visible, .button:focus-visible { outline: 2px solid var(--hover); outline-offset: 3px; }
+
+footer.small {
+	padding: 2em 0 4em;
+	text-align: center;
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+	color: var(--faint);
+}
+
+/* Gentle fade-in as each step scrolls into view (only when JavaScript is running) */
+.js .reveal {
+	opacity: 0;
+	transform: translateY(2em);
+	transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.js .reveal.in {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+	.js .reveal { transform: none; transition: opacity 0.3s ease; }
+}
+
+/* Small screens */
+@media screen and (max-width: 736px) {
+	.page { width: calc(100% - 2.5em); }
+	.beat { min-height: 56vh; padding: 7.5vh 0; }
+	.gif { min-height: 45vh; }
+	.hero h1 { font-size: 2.1em; }
+	.opener h2 { font-size: 1.9em; }
+	.step h3 { font-size: 1.4em; }
+	.step .formula { font-size: 1.05em; }
+	.step .formula.long { font-size: 0.72em; }
+	.gif figure { padding: 1.75em 0.35em 0.75em; }
+	.buttons { flex-direction: column; align-items: stretch; }
+}
